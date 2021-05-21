@@ -10,21 +10,21 @@
 
 ## Homebrew
 
-- [CLI Commands](https://docs.brew.sh/Manpage)
+- [CLI reference](https://docs.brew.sh/Manpage)
 
-  | Command                           |
-  | --------------------------------- |
-  | `brew search <text\|/text/>`      |
-  | `brew install <formula>`          |
-  | `brew install --cask <cask>`      |
-  | `brew uninstall <formula>`        |
-  | `brew list`                       |
-  | `brew upgrade <outdated_formula>` |
-  | `brew analytics off`              |
+| Command                           |
+| --------------------------------- |
+| `brew search <text\|/text/>`      |
+| `brew install <formula>`          |
+| `brew install --cask <cask>`      |
+| `brew uninstall <formula>`        |
+| `brew list`                       |
+| `brew upgrade <outdated_formula>` |
+| `brew analytics off`              |
 
 ## Chocolatey
 
-- [CLI Commands](https://docs.chocolatey.org/en-us/choco/commands/)
+- [CLI reference](https://docs.chocolatey.org/en-us/choco/commands/)
 
 | Command                                     |
 | ------------------------------------------- |
@@ -38,7 +38,9 @@
 ## Git
 
 - [zsh git aliases](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
-- [interactive rebase](https://git-scm.com/docs/git-rebase#_interactive_mode)
+- [Interactive rebase](https://git-scm.com/docs/git-rebase#_interactive_mode)
+
+Create git alias:
 
 ```
 git config --global alias.pushd "push -u origin HEAD"
@@ -48,6 +50,7 @@ git pushd
 | Zsh Alias     | Command                                                |
 | ------------- | ------------------------------------------------------ |
 | `gst`         | `git status`                                           |
+| `glg`         | `git log --stat`                                       |
 | `glo`         | `git log --oneline --decorate`                         |
 | `gl`          | `git pull`                                             |
 | `gp`          | `git push`                                             |
@@ -67,45 +70,63 @@ git pushd
 
 - [Call `nvm use` automatically in a directory with a `.nvmrc` file](https://github.com/nvm-sh/nvm#zsh)
 
-| Command                                     | Description |
-| ------------------------------------------- | ----------- |
-| `nvm use`                                   |             |
-| `nvm use --lts`                             |             |
-| `nvm alias default 14`                      |             |
-| `nvm ls`                                    |             |
-| `nvm ls-remote \| grep -i "<node_version>"` |             |
-| `nvm install --lts`                         |             |
-| `nvm uninstall <node_version>`              |             |
+| Command                                     |
+| ------------------------------------------- |
+| `nvm use`                                   |
+| `nvm use --lts`                             |
+| `nvm alias default 14`                      |
+| `nvm ls`                                    |
+| `nvm ls-remote \| grep -i "<node_version>"` |
+| `nvm install <node_version>`                |
+| `nvm install --lts`                         |
+| `nvm uninstall <node_version>`              |
 
 ## Docker
 
-- [docker CLI Commands](https://docs.docker.com/engine/reference/commandline/cli/)
-- [docker-compose CLI Commands](https://docs.docker.com/compose/reference/)
+- [docker CLI reference](https://docs.docker.com/engine/reference/commandline/cli/)
+- [docker-compose CLI reference](https://docs.docker.com/compose/reference/)
 
-| Command                  | Description |
-| ------------------------ | ----------- |
-| `docker ps`              |             |
-| `docker cp`              |             |
-| `docker rm`              |             |
-| `docker rmi`             |             |
-| `docker stop`            |             |
-| `docker exec -it bash`   |             |
-| `docker version`         |             |
-| `docker-compose up -d`   |             |
-| `docker-compose version` |             |
+| Command                                          | Description                                                           |
+| ------------------------------------------------ | --------------------------------------------------------------------- |
+| `docker ps`                                      | list containers                                                       |
+| `docker ps -a`                                   | list all containers                                                   |
+| `docker ps -aq`                                  | list all container ids                                                |
+| `docker images`                                  | list downloaded images                                                |
+| `docker cp <container_id>:<src_path> <dst_path>` | copy from container to local machine                                  |
+| `docker cp <src_path> <container_id>:<dst_path>` | copy from local machine to container                                  |
+| `docker rm`                                      | remove container                                                      |
+| `docker rm $(docker ps -aq)`                     | remove all containers                                                 |
+| `docker rmi [-f] <image>`                        | remove image                                                          |
+| `docker stop <container_id>`                     |                                                                       |
+| `docker exec -it <container_id> <command>`       | run CLI command inside the container                                  |
+| `docker-compose up -d`                           | builds, (re)creates, starts, and attaches to containers for a service |
+| `docker version`                                 |                                                                       |
+| `docker-compose version`                         |                                                                       |
 
 ## PostgreSQL
 
+- [psql](https://www.postgresql.org/docs/current/app-psql.html)
+- [Cheatsheet](https://tomcam.github.io/postgres/)
+
+| Command                                                     | Description                                           |
+| ----------------------------------------------------------- | ----------------------------------------------------- |
+| `psql -h <hostname> -p <port> -U <username> -d <dbname> -W` | connect to database (-W option means propmt password) |
+| `\h`                                                        | help                                                  |
+| `\q`                                                        | quit                                                  |
+| `\l`                                                        | list databases                                        |
+| `\dt`                                                       | display tables                                        |
+| `\du`                                                       | display user roles                                    |
+
 ## Knex
 
-- [Migrations CLI](https://knexjs.org/#Migrations-CLI)
+- [Migrations CLI reference](https://knexjs.org/#Migrations-CLI)
 - [Cheatsheet](https://devhints.io/knex)
 
 | Command                            | Description                                      |
 | ---------------------------------- | ------------------------------------------------ |
-| `knex init`                        |                                                  |
+| `knex init`                        | create new knex file                             |
 | `knex migrate:make migration_name` | create migration file                            |
-| `knex migrate:latest`              |                                                  |
+| `knex migrate:latest`              | run all migration that has not yet been run      |
 | `knex migrate:rollback`            | rollback the last batch of migrations            |
 | `knex migrate:rollback --all`      | rollback all the completed migrations            |
 | `knex migrate:up`                  | run the next migration that has not yet been run |
