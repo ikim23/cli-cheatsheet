@@ -12,15 +12,16 @@
 
 - [CLI reference](https://docs.brew.sh/Manpage)
 
-| Command                           |
-| --------------------------------- |
-| `brew search <text\|/text/>`      |
-| `brew install <formula>`          |
-| `brew install --cask <cask>`      |
-| `brew uninstall <formula>`        |
-| `brew list`                       |
-| `brew upgrade <outdated_formula>` |
-| `brew analytics off`              |
+| Command                                            |
+| -------------------------------------------------- |
+| `brew search <text\|/text/>`                       |
+| `brew install <formula>`                           |
+| `brew install --cask <cask>`                       |
+| `brew uninstall <formula>`                         |
+| `brew list`                                        |
+| `brew upgrade <outdated_formula>`                  |
+| `` brew update && brew upgrade `brew outdated`  `` |
+| `brew analytics off`                               |
 
 ## Chocolatey
 
