@@ -7,6 +7,7 @@
 - [Docker](#docker)
 - [PostgreSQL](#postgresql)
 - [Knex](#knex)
+- [Linux](#linux)
 
 ## Homebrew
 
@@ -144,3 +145,9 @@ git pushd
 | `knex migrate:up`                  | run the next migration that has not yet been run |
 | `knex migrate:down`                | undo the last migration that was run             |
 | `knex migrate:list`                | list both completed and pending migrations       |
+
+## Linux
+
+| Command                           | Description                                            |
+| --------------------------------- | ------------------------------------------------------ |
+| `ln -s <target_file> <link_name>` | [create symbolic link](https://linux.die.net/man/1/ln) |
