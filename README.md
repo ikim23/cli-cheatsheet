@@ -48,24 +48,35 @@ git config --global alias.pushd "push -u origin HEAD"
 git pushd
 ```
 
-| Zsh Alias     | Command                                                |
-| ------------- | ------------------------------------------------------ |
-| `gst`         | `git status`                                           |
-| `glg`         | `git log --stat`                                       |
-| `glo`         | `git log --oneline --decorate`                         |
-| `gl`          | `git pull`                                             |
-| `gp`          | `git push`                                             |
-| `gpf`         | `git push --force-with-lease`                          |
-| `gpsup`       | `git push --set-upstream origin $(git_current_branch)` |
-| `gco`         | `git checkout`                                         |
-| `gcm`         | `git checkout $(git_main_branch)`                      |
-| `grhh`        | `git reset --hard`                                     |
-| `grb`         | `git rebase`                                           |
-| `grba`        | `git rebase --abort`                                   |
-| `grbc`        | `git rebase --continue`                                |
-| `grbm`        | `git rebase $(git_main_branch)`                        |
-| `grbd`        | `git rebase develop`                                   |
-| `grbi HEAD~3` | `git rebase -i HEAD~3`                                 |
+| Zsh Alias                             | Command                                                |
+| ------------------------------------- | ------------------------------------------------------ |
+| `gst`                                 | `git status`                                           |
+| `glg`                                 | `git log --stat`                                       |
+| `glo`                                 | `git log --oneline --decorate`                         |
+| `gl`                                  | `git pull`                                             |
+| `gp`                                  | `git push`                                             |
+| `gpf`                                 | `git push --force-with-lease`                          |
+| `gpsup`                               | `git push --set-upstream origin $(git_current_branch)` |
+| `gco`                                 | `git checkout`                                         |
+| `gcm`                                 | `git checkout $(git_main_branch)`                      |
+| `gc`                                  | `git commit -v`                                        |
+| `gc!`                                 | `git commit -v --amend`                                |
+| `gstl`                                | `git stash list`                                       |
+| `gsta`                                | `git stash push`                                       |
+| `gstp`                                | `git stash pop`                                        |
+| `gstaa`                               | `git stash apply`                                      |
+| `gstd`                                | `git stash drop`                                       |
+| `grhh`                                | `git reset --hard`                                     |
+| `grb`                                 | `git rebase`                                           |
+| `grba`                                | `git rebase --abort`                                   |
+| `grbc`                                | `git rebase --continue`                                |
+| `grbm`                                | `git rebase $(git_main_branch)`                        |
+| `grbd`                                | `git rebase develop`                                   |
+| `grbi HEAD~3`                         | `git rebase -i HEAD~3`                                 |
+| `git tag <tag-name>`                  |                                                        |
+| `git push origin <tag-name>`          |                                                        |
+| `git tag -d <tag-name>`               |                                                        |
+| `git push --delete origin <tag-name>` |                                                        |
 
 ## NVM
 
