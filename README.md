@@ -3,6 +3,7 @@
 - [Homebrew](#homebrew)
 - [Chocolatey](#chocolatey)
 - [Git](#git)
+- [Markdown](#markdown)
 - [NVM](#nvm)
 - [Docker](#docker)
 - [PostgreSQL](#postgresql)
@@ -78,6 +79,18 @@ git pushd
 | `git push origin <tag-name>`          |                                                        |
 | `git tag -d <tag-name>`               |                                                        |
 | `git push --delete origin <tag-name>` |                                                        |
+
+## Markdown
+
+- [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+| Markdown                 | Example                |
+| ------------------------ | ---------------------- |
+| `*italics* or _italics_` | _italics_ or _italics_ |
+| `**bold** or __bold__`   | **bold** or **bold**   |
+| `**_bold italics_**`     | **_bold italics_**     |
+| `~~strikethrough~~`      | ~~strikethrough~~      |
+| `> blockquote`           |                        |
 
 ## NVM
 
