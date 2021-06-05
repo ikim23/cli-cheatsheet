@@ -12,6 +12,7 @@
 
 ## Homebrew
 
+- [Search packages](https://brew.sh/)
 - [CLI reference](https://docs.brew.sh/Manpage)
 
 | Command                                            |
@@ -27,6 +28,7 @@
 
 ## Chocolatey
 
+- [Search packages](https://community.chocolatey.org/packages)
 - [CLI reference](https://docs.chocolatey.org/en-us/choco/commands/)
 
 | Command                                     |
@@ -83,6 +85,7 @@ git pushd
 ## Markdown
 
 - [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Emoji list](https://github.com/caiyongji/emoji-list)
 
 | Markdown                 | Example                |
 | ------------------------ | ---------------------- |
