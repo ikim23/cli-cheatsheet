@@ -71,6 +71,7 @@ git pushd
 | `gstp`                                | `git stash pop`                                        |
 | `gstaa`                               | `git stash apply`                                      |
 | `gstd`                                | `git stash drop`                                       |
+| `gpristine`                           | `git reset --hard && git clean -dffx`                  |
 | `grhh`                                | `git reset --hard`                                     |
 | `grb`                                 | `git rebase`                                           |
 | `grba`                                | `git rebase --abort`                                   |
