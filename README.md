@@ -62,6 +62,7 @@ git pushd
 | `gpf`                                 | `git push --force-with-lease`                          |
 | `gpsup`                               | `git push --set-upstream origin $(git_current_branch)` |
 | `gco`                                 | `git checkout`                                         |
+| `gco -`                               | checkout to previous branch                            |
 | `gcm`                                 | `git checkout $(git_main_branch)`                      |
 | `gc`                                  | `git commit -v`                                        |
 | `gc!`                                 | `git commit -v --amend`                                |
