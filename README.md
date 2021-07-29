@@ -44,12 +44,14 @@
 
 - [zsh git aliases](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
 - [Interactive rebase](https://git-scm.com/docs/git-rebase#_interactive_mode)
+- [`git gone`](https://www.erikschierboom.com/2020/02/17/cleaning-up-local-git-branches-deleted-on-a-remote/)
 
 Create git alias:
 
 ```
-git config --global alias.pushd "push -u origin HEAD"
-git pushd
+git config --global alias.gone "! git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '\$2 == \"[gone]\" {print \$1}' | xargs -r git branch -D"
+
+alias gpha="git push && git rev-parse HEAD | tr -d '\n' | pbcopy"
 ```
 
 | Zsh Alias                             | Command                                                |
