@@ -147,6 +147,7 @@ alias gpha="git push && git rev-parse HEAD | tr -d '\n' | pbcopy"
 | `\h`                                                        | help                                                  |
 | `\q`                                                        | quit                                                  |
 | `\l`                                                        | list databases                                        |
+| `\c <dbname>`                                               | connect to database                                   |
 | `\dt`                                                       | display tables                                        |
 | `\du`                                                       | display user roles                                    |
 
