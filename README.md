@@ -68,6 +68,7 @@ alias gpha="git push && git rev-parse HEAD | tr -d '\n' | pbcopy"
 | `gcm`                                 | `git checkout $(git_main_branch)`                      |
 | `gc`                                  | `git commit -v`                                        |
 | `gc!`                                 | `git commit -v --amend`                                |
+| `gmom`                                | `git merge origin/$(git_main_branch)`                  |
 | `gstl`                                | `git stash list`                                       |
 | `gsta`                                | `git stash push`                                       |
 | `gstp`                                | `git stash pop`                                        |
