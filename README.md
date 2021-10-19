@@ -57,8 +57,8 @@ alias gpha="git push && git rev-parse HEAD | tr -d '\n' | pbcopy"
 | Zsh Alias                             | Command                                                |
 | ------------------------------------- | ------------------------------------------------------ |
 | `gst`                                 | `git status`                                           |
-| `glg`                                 | `git log --stat`                                       |
 | `glo`                                 | `git log --oneline --decorate`                         |
+| `glol`                                | `git log --graph --pretty='...'`                       |
 | `gl`                                  | `git pull`                                             |
 | `gp`                                  | `git push`                                             |
 | `gpf`                                 | `git push --force-with-lease`                          |
