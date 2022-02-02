@@ -173,5 +173,6 @@ alias gpha="git push && git rev-parse HEAD | tr -d '\n' | pbcopy"
 | Command                           | Description                                            |
 | --------------------------------- | ------------------------------------------------------ |
 | <kbd>Ctrl</kbd> + <kbd>U</kbd>    | Terminal: delete whole command                         |
+| <kbd>Ctrl</kbd> + <kbd>K</kbd>    | Terminal: delete right of the cursor                   |
 | <kbd>Ctrl</kbd> + <kbd>W</kbd>    | Terminal: delete word                                  |
 | `ln -s <target_file> <link_name>` | [create symbolic link](https://linux.die.net/man/1/ln) |
